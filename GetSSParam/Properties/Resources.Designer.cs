@@ -59,5 +59,14 @@ namespace GetSSParam.Properties {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   查找类似 V1.0 Beta 的本地化字符串。
+        /// </summary>
+        internal static string strVersion {
+            get {
+                return ResourceManager.GetString("strVersion", resourceCulture);
+            }
+        }
     }
 }

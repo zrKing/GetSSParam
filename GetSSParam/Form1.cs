@@ -90,5 +90,16 @@ namespace GetSSParam
             this.textBox1.TextAlign = HorizontalAlignment.Center;
             this.textBox1.Text = strAbout;
         }
+
+        private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            About fa = new About();
+            fa.ShowDialog(this);
+        }
+
+        private void refreshToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.button1_Click(sender, e);
+        }
     }
 }
