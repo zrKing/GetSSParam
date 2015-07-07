@@ -24,6 +24,8 @@ namespace GetSSParam
         private string strURL = @"http://doc.wandoer.com/fp.txt";
         private string str = "";
         private string strVersion = "V1.0";
+        private static About fa = null;
+
 
         private void button1_Click(object sender, EventArgs e)
         {            
@@ -93,7 +95,15 @@ namespace GetSSParam
 
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            About fa = new About();
+            if (fa == null)
+                fa = new About();
+
+            if (fa.Visible)
+            {
+                fa.Activate();
+                return;
+            }
+
             fa.ShowDialog(this);
         }
 

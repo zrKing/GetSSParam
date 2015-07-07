@@ -27,7 +27,8 @@ namespace GetSSParam
         {
             ResourceManager rm = new ResourceManager(typeof(Resources));
             string strVersion = rm.GetString("strVersion");
-            string strAbout = "Get the params of Shadowsocks for wangfl.\r\nIf there any problems,please contact zrKing©2015";
+            //string strAbout = "Get the params of Shadowsocks for wangfl.\r\nIf there any problems,please contact zrKing©2015";
+            string strAbout = "Get the params of Shadowsocks.\r\nIf there any problems,please contact zrKing©2015";
             strAbout += "\r\n\r\nVersion : ";
             strAbout += strVersion;
 
